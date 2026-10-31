@@ -406,6 +406,7 @@ Detailed technical documentation is available in the `docs/` directory:
 | Document | Description |
 |---|---|
 | [Data Dictionary](docs/data_dictionary.md) | Entity schemas, column definitions, data types, metadata, and business rules |
+| [AI Assistance and Prompt History](docs/ai_prompt_history.md) | AI assistance scope, representative prompt categories, and development verification |
 | [Dataset Design](docs/dataset_design.md) | Dataset generation strategy, entities, record counts, and design decisions |
 | [Partitioning Analysis](docs/partitioning_analysis.md) | Storage layouts, file sizes, partition pruning, and benchmark results |
 | [Reliability and Recovery](docs/reliability_and_recovery.md) | Publication safety, retry handling, rollback, and recovery mechanisms |
