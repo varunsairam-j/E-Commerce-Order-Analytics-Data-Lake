@@ -405,6 +405,7 @@ Detailed technical documentation is available in the `docs/` directory:
 
 | Document | Description |
 |---|---|
+| [Data Dictionary](docs/data_dictionary.md) | Entity schemas, column definitions, data types, metadata, and business rules |
 | [Dataset Design](docs/dataset_design.md) | Dataset generation strategy, entities, record counts, and design decisions |
 | [Partitioning Analysis](docs/partitioning_analysis.md) | Storage layouts, file sizes, partition pruning, and benchmark results |
 | [Reliability and Recovery](docs/reliability_and_recovery.md) | Publication safety, retry handling, rollback, and recovery mechanisms |
@@ -412,11 +413,13 @@ Detailed technical documentation is available in the `docs/` directory:
 
 ## AI Usage Disclosure
 
-AI-assisted tools were used as supplementary aids during the development of this project.
+AI-assisted tools were used selectively as supplementary resources during project development.
 
-They supported technical discussions, debugging, exploring implementation approaches, reviewing test scenarios, and improving project documentation.
+They helped with understanding technical concepts, exploring implementation approaches, debugging issues, identifying edge cases, reviewing test scenarios, and improving documentation.
 
-The developer was actively involved throughout the development process, including implementing and integrating solutions, executing the pipeline, investigating errors, validating outputs, running automated tests, and making technical decisions.
+The project involved hands-on implementation, integration, execution, and verification. The developer independently worked through implementation issues, evaluated suggested approaches, validated pipeline outputs, executed automated tests, and made technical decisions throughout development.
 
-All suggested approaches were reviewed and tested against the actual project implementation. The developer takes responsibility for the submitted code, its functionality, and the ability to explain the design and implementation decisions.
+All final implementation decisions and submitted results were reviewed and verified against the actual project.
+
+The developer takes responsibility for the submitted code, its functionality, and the ability to explain the project's design and implementation.
 
