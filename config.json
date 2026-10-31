@@ -1,0 +1,33 @@
+{
+    "project": {
+        "name": "E-Commerce Order Analytics Data Lake",
+        "currency": "INR",
+        "timezone": "UTC"
+    },
+    "dataset": {
+        "random_seed": 42,
+        "start_date": "2024-01-01",
+        "end_date": "2025-12-31",
+        "customers": 10000,
+        "products": 2000,
+        "orders": 40000,
+        "order_items": 120000
+    },
+    "data_quality": {
+        "inject_defects": true,
+        "defect_count_per_scenario": 50
+    },
+"partitioning": {
+    "partition_column": "order_date",
+    "strategies": [
+        "daily",
+        "monthly"
+    ],
+    "compaction": {
+        "target_file_size_mb": 128,
+        "max_rows_per_file": 50000
+    }
+},    "benchmark": {
+        "minimum_order_items": 100000
+    }
+}

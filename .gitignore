@@ -1,0 +1,30 @@
+# Python Cache Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test and Coverage Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Generated Datasets and Pipeline Outputs
+data/
+outputs/
+
+# Generated Data Files
+*.csv
+*.parquet
+
+# Logs
+*.log
+
+# IDE and OS Files
+.vscode/
+.DS_Store
+Thumbs.db

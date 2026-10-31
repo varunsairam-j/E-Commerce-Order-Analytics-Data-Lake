@@ -1,0 +1,26 @@
+[
+    {
+        "strategy": "daily",
+        "total_records": 118707,
+        "distinct_order_items": 118707,
+        "total_quantity": 356620,
+        "total_revenue": "1872484005.17",
+        "null_records": 0
+    },
+    {
+        "strategy": "monthly",
+        "total_records": 118707,
+        "distinct_order_items": 118707,
+        "total_quantity": 356620,
+        "total_revenue": "1872484005.17",
+        "null_records": 0
+    },
+    {
+        "strategy": "yearly_compacted",
+        "total_records": 118707,
+        "distinct_order_items": 118707,
+        "total_quantity": 356620,
+        "total_revenue": "1872484005.17",
+        "null_records": 0
+    }
+]
