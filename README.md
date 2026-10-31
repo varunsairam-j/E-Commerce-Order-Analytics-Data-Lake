@@ -281,47 +281,45 @@ Run the complete test suite using:
 
 ```bash
 pytest -v
-
-## Project Structure
+```
 
 ```text
 E-Commerce-Order-Analytics-Data-Lake/
 │
-├── data/
-│   ├── raw/
-│   ├── incoming/
-│   ├── accepted/
-│   ├── processed/
-│   ├── quarantine/
-│   └── lake/
-│       ├── daily/
-│       ├── monthly/
-│       └── yearly_compacted/
+├── benchmarks/
+│   ├── daily_vs_monthly.json
+│   ├── dataset_verification.json
+│   └── multi_date_benchmark.json
+│
+├── docs/
+│   ├── ai_prompt_history.md
+│   ├── data_dictionary.md
+│   ├── dataset_design.md
+│   ├── partitioning_analysis.md
+│   └── reliability_and_recovery.md
 │
 ├── src/
+│   ├── benchmark.py
 │   ├── config_loader.py
 │   ├── data_generator.py
 │   ├── defect_injector.py
 │   ├── pipeline.py
-│   ├── transform.py
-│   ├── storage.py
 │   ├── run_pipeline.py
-│   └── benchmark.py
+│   ├── storage.py
+│   └── transform.py
 │
 ├── tests/
 │   ├── test_source_data.py
 │   ├── test_pipeline.py
 │   ├── test_transform.py
 │   ├── test_storage.py
-│   └── test_run_pipeline.py├── docs/
-├── outputs/
-│   ├── quarantine/
-│   └── run_manifests/
+│   └── test_run_pipeline.py
 │
 ├── config.json
 ├── requirements.txt
+├── .gitignore
 └── README.md
-
+```
 
 ## Installation and Setup
 
@@ -338,7 +336,6 @@ E-Commerce-Order-Analytics-Data-Lake/
 git clone https://github.com/varunsairam-j/E-Commerce-Order-Analytics-Data-Lake.git
 cd E-Commerce-Order-Analytics-Data-Lake
 ```
-Replace `<YOUR_GITHUB_REPOSITORY_URL>` with the actual URL of the published GitHub repository.
 
 
 ### 2. Create and Activate the Conda Environment
@@ -414,13 +411,12 @@ Detailed technical documentation is available in the `docs/` directory:
 
 ## AI Usage Disclosure
 
-AI-assisted tools were used selectively as supplementary resources during project development.
+ChatGPT was used as an AI-assisted development resource throughout this project.
 
-They helped with understanding technical concepts, exploring implementation approaches, debugging issues, identifying edge cases, reviewing test scenarios, and improving documentation.
+Its assistance included technical explanations, architecture discussions, implementation guidance, debugging, code reviews, test-case design, performance analysis, and documentation improvements.
 
-The project involved hands-on implementation, integration, execution, and verification. The developer independently worked through implementation issues, evaluated suggested approaches, validated pipeline outputs, executed automated tests, and made technical decisions throughout development.
+The developer was responsible for implementing and integrating the project modules, executing the pipeline, investigating errors, evaluating suggested approaches, running automated tests and benchmarks, and verifying the resulting outputs.
 
-All final implementation decisions and submitted results were reviewed and verified against the actual project.
+A detailed account of AI assistance and reconstructed development prompts is provided in [AI Assistance and Reconstructed Prompt History](docs/ai_prompt_history.md).
 
-The developer takes responsibility for the submitted code, its functionality, and the ability to explain the project's design and implementation.
-
+The developer takes responsibility for the submitted implementation, its functionality, reported results, and ability to explain the project's architecture, design decisions, testing methodology, and limitations.
